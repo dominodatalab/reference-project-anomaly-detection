@@ -28,7 +28,16 @@ RUN pip install openvino-dev[pytorch,onnx]==2023.0.1
 
 Don't forget to expose the relevant IDEs as pluggable workspaces, as described in the [Domino Documentation](https://docs.dominodatalab.com/en/latest/user_guide/03e062/add-workspace-ides/).
 
-## ModelAPI
+## Model API
 
+The scoring endpoint expects an image path as its input. For this to work, the model version needs to be configured with a a [Kubernetes volumes](https://docs.dominodatalab.com/en/latest/user_guide/8dbc91/deploy-models-at-rest/#add-volumes), where the scored images are uploaded. The call then takes the form of
+
+```
+{
+  "data": {
+    "image": "[volume]/[image.png]"
+  }
+}
+```
 
 
