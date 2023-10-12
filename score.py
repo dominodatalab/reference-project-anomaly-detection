@@ -1,3 +1,4 @@
+import os
 import sys
 
 from anomalib.deploy import OpenVINOInferencer
@@ -14,7 +15,8 @@ def score(image):
     return predictions.pred_score, predictions.pred_label
 
 if __name__ == "__main__":
-    pred_score, pred_label = score("/domino/datasets/local/anomalib/metal_nut/test/bent/000.png")
+    dataset_path = os.path.join(os.environ["DOMINO_DATASETS_DIR"], os.environ["DOMINO_PROJECT_NAME"])
+    pred_score, pred_label = score(os.path.join(dataset_path, "metal_nut/test/bent/000.png"))
     print("pred_score: ", pred_score)
     print("pred_label: ", pred_label)
     
