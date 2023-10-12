@@ -16,7 +16,7 @@ The assets included in the project are:
 
 ## Dockerfile
 
-This project uses a compute environment based on quay.io/domino/compute-environment-images:ubuntu20-py3.9-r4.2-domino5.6-standard
+This project uses a compute environment based on `quay.io/domino/compute-environment-images:ubuntu20-py3.9-r4.2-domino5.6-standard`
 
 Add the following entries to the Dockerfile:
 
