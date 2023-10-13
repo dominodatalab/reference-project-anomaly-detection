@@ -22,12 +22,11 @@ Add the following entries to the Dockerfile:
 
 ```
 USER ubuntu
-RUN pip install anomalib==0.6.0 \
-    && pip install openvino==2023.0.1
+RUN pip install --user anomalib==0.6.0 \
+    && pip install --user openvino==2023.0.1
 
-#RUN pip install onnx==1.14.0
 
-RUN pip install openvino-dev[pytorch,onnx]==2023.0.1
+RUN pip install --user openvino-dev[pytorch,onnx]==2023.0.1
 ```
 
 Don't forget to expose the relevant IDEs as pluggable workspaces, as described in the [Domino Documentation](https://docs.dominodatalab.com/en/latest/user_guide/03e062/add-workspace-ides/).
