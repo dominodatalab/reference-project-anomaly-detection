@@ -10,7 +10,7 @@ In this project, we go through the process of applying anomaly detection for the
 
 The assets included in the project are:
 
-*anomaly_detection.ipynb* - A notebook that walks the user over the process of acquiring the MVTecAD dataset and storing it as a [Domino Dataset](https://docs.dominodatalab.com/en/latest/user_guide/0a8d11/datasets/). It also configures, trains, and runs a test inference call with the PaDIM model. The trained model is also persisted in `padim` for the purposes of deploying it as a Model API.
+*anomaly_detection.ipynb* - A notebook that walks the user over the process of acquiring the MVTecAD dataset and storing it as a [Domino Dataset](https://docs.dominodatalab.com/en/latest/user_guide/ba5bad/manage-data-in-domino-datasets/). It also configures, trains, and runs a test inference call with the PaDIM model. The trained model is also persisted in `padim` for the purposes of deploying it as a Model API.
 
 *score.py* - a scoring function that exposes the persisted model as Model API. The score function accepts an image path as an argument and returns a boolean prediction (anomalous or not) and a confidence score of the prediction.
 
