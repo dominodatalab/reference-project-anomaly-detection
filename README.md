@@ -16,7 +16,7 @@ The assets included in the project are:
 
 ## Dockerfile
 
-Please create an environment based off of Domino Standard Environment (DSE), that contains Python 3.9 or above.
+Please create an environment based off of a Domino Standard Environment (DSE), that contains Python 3.9 or above.
 
 Add the following entries to the Dockerfile:
 
