@@ -14,7 +14,9 @@ The assets included in the project are:
 
 *score.py* - a scoring function that exposes the persisted model as Model API. The score function accepts an image path as an argument and returns a boolean prediction (anomalous or not) and a confidence score of the prediction.
 
-## Dockerfile
+## Environment Requirements
+
+### Dockerfile
 
 Please refer to the AI Hub meta data to get information about the environment needed to run this project . Alternately, please create an environment based off of a Domino Standard Environment (DSE), that contains Python 3.9 or above.
 
@@ -30,6 +32,9 @@ RUN pip install --user openvino-dev[pytorch,onnx]==2023.0.1
 ```
 
 Don't forget to expose the relevant IDEs as pluggable workspaces, as described in the [Domino Documentation](https://docs.dominodatalab.com/en/latest/user_guide/03e062/add-workspace-ides/).
+
+## Hardware Requirements
+This project works with a standard small-sized hardware tier, such as the small-k8s tier on all Domino deployments.
 
 ## Model API
 
