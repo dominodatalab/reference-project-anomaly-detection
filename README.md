@@ -1,7 +1,11 @@
 # Anomaly Detection using Computer Vision
 
 ## License
-This template is licensed to Customer subject to the terms of the license agreement between Domino and the Customer on file.
+This template is licensed under Apache 2.0 and contains the following components:
+
+* anomalib [Apache 2.0](https://github.com/openvinotoolkit/anomalib/blob/main/LICENSE)
+* pytorch-lightning [Apache 2.0](https://github.com/Lightning-AI/pytorch-lightning/blob/master/LICENSE)
+* matplotlib [MDT](https://matplotlib.org/stable/users/project/license.html)
 
 ## About this project
 The purpose of anomaly detection via computer vision is to identify and flag instances in visual data that deviate significantly from what is considered normal or expected. Anomalies, also known as outliers, are data points or patterns that differ substantially from the majority of the data, either due to errors, defects, fraud, or any other unusual circumstances. Anomaly detection in computer vision involves leveraging machine learning and image processing techniques to automatically identify such anomalies in images or videos.
