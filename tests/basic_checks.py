@@ -31,7 +31,7 @@ class TestAnomalyDetection(unittest.TestCase):
 
     def test_config_file_exists(self):
         """ Test if the config file exists """
-        config_file_path = "../padim_config.yaml"
+        config_file_path = "/mnt/code/padim_config.yaml"
         self.assertTrue(os.path.isfile(image_file_path), "Config file does not exist")
 
 if __name__ == '__main__':
